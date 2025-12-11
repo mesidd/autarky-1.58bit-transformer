@@ -38,3 +38,9 @@ The model successfully learned Shakespearean grammar, vocabulary, and syntax usi
 
    python train_autarky.py
 ```
+### ⚠️ A Note on Reproducibility (The "Save" Mistake)
+*Engineering Log, Step 49,950:*
+The training logs and loss metrics (1.37) shown above are from my actual run on an Apple M1. However, in the initial version of the script, I missed including the `torch.save()` command.
+* **Result:** I witnessed the convergence, but the weights died with the process.
+* **Fix:** The `train_autarky.py` in this repository **has been updated** to include the model saving logic. When you run it, it *will* save `autarky_158.pth` automatically.
+* **Next Steps:** I will upload the pre-trained weights file `autarky_158.pth` after my next full training cycle. For now, the code is complete and ready for you to train your own.
