@@ -117,6 +117,6 @@ print(decode(generated))
 print("\n--- END OF TRANSMISSION ---")
 
 # --- SAVING THE ENGINE ---
-print(" Saving Autarky-1.58bit Model...")
-torch.save(model.state_dict(), 'autarky_158.pth')
-print("✅ Saved to 'autarky_158.pth'")
+print(" Saving Autarky-1.58bit char Model...")
+torch.save(model.state_dict(), 'autarky_char.pth')
+print("✅ Saved to 'autarky_char.pth'")
